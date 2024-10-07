@@ -2,7 +2,7 @@
 using System.Drawing;
 
 Console.WriteLine("Hello, World!");
-
+//-------------------------------------------------------------------------------------------------//
 
 // Y = 4 | X = 8
 Console.WriteLine();
@@ -14,6 +14,8 @@ Console.WriteLine("/______\\");
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
+//-------------------------------------------------------------------------------------------------//
+
 // X = 15 | Y = 8
 Console.WriteLine("     *****     ");
 Console.WriteLine("   **     **   ");
@@ -27,8 +29,9 @@ Console.WriteLine("     *****     ");
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
-// Y = 4 | X = 8
+//-------------------------------------------------------------------------------------------------//
 
+// Y = 4 | X = 8
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("   /\\   ");
 Console.ForegroundColor = ConsoleColor.Green;
@@ -42,9 +45,9 @@ Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
+//-------------------------------------------------------------------------------------------------//
 
 // Y = 9 | X = 13
-
 Console.ForegroundColor = ConsoleColor.DarkBlue;
 Console.WriteLine(" / \\     / \\ ");
 Console.ForegroundColor= ConsoleColor.DarkCyan;
@@ -68,6 +71,7 @@ Console.ForegroundColor = ConsoleColor.White;
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
+//-------------------------------------------------------------------------------------------------//
 
 string item = "Obuolys";
 int amount = 5;
@@ -78,6 +82,7 @@ Console.WriteLine("Kaina: " + price + " eur");
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
+//-------------------------------------------------------------------------------------------------//
 
 string name = "Vardenis Pavardenis";
 int age = 28;
@@ -92,3 +97,5 @@ Console.WriteLine("Pareigos: " + job);
 Console.WriteLine("E. Pastas: " + email);
 Console.WriteLine("Tel.: " + number);
 Console.WriteLine("======================================");
+
+//-------------------------------------------------------------------------------------------------//
