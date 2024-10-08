@@ -2,6 +2,7 @@
 using System.Drawing;
 
 Console.WriteLine("Hello, World!");
+Console.WriteLine("This is the first lecture");
 //-------------------------------------------------------------------------------------------------//
 
 // Y = 4 | X = 8
