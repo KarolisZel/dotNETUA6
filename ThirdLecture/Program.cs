@@ -92,7 +92,7 @@ else if (gotUp >= 12 && gotUp < 18)
     Console.WriteLine("Geros popietes!");
 else if (gotUp >= 18 && gotUp <= 24)
     Console.WriteLine("Gero vakaro!");
-else 
+else
     Console.WriteLine("Ivesta valanda neatitinka 24h formato");
 
 Console.WriteLine();
@@ -102,7 +102,7 @@ Console.Write("Iveskite slaptazodi: ");
 var pass = "Password";
 var passInput = Console.ReadLine();
 
-if (passInput == "Password" || passInput == "Mellon")
+if (passInput == pass || passInput == "Mellon")
     Console.WriteLine("Sekmingai prisijungete");
 else if (passInput == "01101001 01101110")
     Console.WriteLine("Nulauzta...");
