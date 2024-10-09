@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FistLecture", "FistLecture\FistLecture.csproj", "{67A29891-6DAD-4073-A523-8785C466E4F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLecture", "SecondLecture\SecondLecture.csproj", "{D71C83BC-FE3A-40C3-90A0-6361C31C1B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondLecture", "SecondLecture\SecondLecture.csproj", "{D71C83BC-FE3A-40C3-90A0-6361C31C1B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdLecture", "ThirdLecture\ThirdLecture.csproj", "{2C81C4D7-7762-47BB-97A0-F63687A34A3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D71C83BC-FE3A-40C3-90A0-6361C31C1B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D71C83BC-FE3A-40C3-90A0-6361C31C1B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D71C83BC-FE3A-40C3-90A0-6361C31C1B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C81C4D7-7762-47BB-97A0-F63687A34A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C81C4D7-7762-47BB-97A0-F63687A34A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C81C4D7-7762-47BB-97A0-F63687A34A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C81C4D7-7762-47BB-97A0-F63687A34A3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
