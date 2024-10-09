@@ -111,3 +111,203 @@ else
 
 Console.WriteLine();
 Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.4
+
+Console.Write("Iveskite savo amziu: ");
+var age = Int32.Parse(Console.ReadLine());
+
+if (age < 18)
+    Console.WriteLine("Jums priklauso nepilnamecio akcija");
+else if (age >= 18 && age < 65)
+    Console.WriteLine("Jus esate suauges");
+else if (age >= 65)
+    Console.WriteLine("Jums priklauso senjoro akcija");
+else
+    Console.WriteLine("Netinkamas amzius");
+Console.WriteLine();
+Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.5
+
+Console.Write("Iveskite metus: ");
+var leapYear = Int32.Parse(Console.ReadLine());
+
+if ((leapYear % 4 == 0 && leapYear % 100 != 0) || leapYear % 400 == 0)
+    Console.WriteLine("Tai yra keliamieji metai!");
+else 
+    Console.WriteLine("Tai nera keliamieji metai!");
+
+//===============================================================//
+/// Uzduotis Nr.6
+
+Console.Write("FizzBuzz: ");
+var fiz = Int32.Parse(Console.ReadLine());
+
+if (fiz % 3 == 0 && fiz % 5 == 0)
+    Console.WriteLine("BazingaPop");
+else if (fiz % 3 == 0)
+    Console.WriteLine("Bazinga");
+else if (fiz % 5 == 0)
+    Console.WriteLine("Pop");
+else 
+    Console.WriteLine(fiz);
+
+Console.WriteLine();
+Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.7
+
+Console.Write("Iveskite du skaicius: ");
+var num1 = Int32.Parse(Console.ReadLine());
+var num2 = Int32.Parse(Console.ReadLine());
+
+if (num1 > 0 && num2 > 0)
+    Console.WriteLine("Skaiciai teigiami");
+else if (num1 > 0 || num2 > 0)
+    Console.WriteLine("Vienas teigiamas");
+else Console.WriteLine("Nei vienas teigiamas");
+
+Console.WriteLine();
+Console.WriteLine();
+
+Console.Write("Iveskite tris skaicius: ");
+var num3 = Int32.Parse(Console.ReadLine());
+var num4 = Int32.Parse(Console.ReadLine());
+var num5 = Int32.Parse(Console.ReadLine());
+
+if (num3 == num4 && num4 == num5 && num3 == num5)
+    Console.WriteLine("Visi lygus");
+else if (num3 == num4 || num4 == num5 || num3 == num5)
+    Console.WriteLine("Du skaiciai lygus");
+else Console.WriteLine("Nei vienas nelygus");
+
+Console.WriteLine();
+Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.8
+
+Console.Write("Iveskite tris skaicius: ");
+
+int sums;
+var a = Int32.Parse(Console.ReadLine());
+var b = Int32.Parse(Console.ReadLine());
+var c = Int32.Parse(Console.ReadLine());
+
+var isAPos = a > 0;
+var isBPos = b > 0;
+var isCPos = c > 0;
+
+if (isAPos && isBPos && isCPos)
+    Console.WriteLine(sums = a + b + c);
+else if (isAPos && isBPos)
+    Console.WriteLine(sums = a + b);
+else if (isAPos && isCPos)
+    Console.WriteLine(sums = a + c);
+else if (isBPos && isCPos)
+    Console.WriteLine(sums = b + c);
+else Console.WriteLine("Neimanoma suskaiciuoti sumos");
+
+Console.WriteLine();
+Console.WriteLine();
+
+Console.Write("Iveskite metus: ");
+var year = Int32.Parse(Console.ReadLine());
+Console.Write("Iveskite menesi (skaicius): ");
+var month = Int32.Parse(Console.ReadLine());
+
+if (month == 1 || month == 2 || month == 3)
+    Console.WriteLine("Saltas laikotarpis");
+else if (month == 6 || month == 7 || month == 8)
+    Console.WriteLine("Karstas laikotarpis");
+else Console.WriteLine("Vidutinis laikotarpis");
+
+Console.WriteLine();
+Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.9
+
+Console.Write("Iveskite tris skirtingus skaicius, atitinkancius trikampio krastiniu ilgius: ");
+
+var firstNum = Int32.Parse(Console.ReadLine());
+var secondNum = Int32.Parse(Console.ReadLine());
+var thirdNum = Int32.Parse(Console.ReadLine());
+
+var isFirstLonger = (firstNum > thirdNum) || (firstNum > secondNum);
+var isSecondLonger = (secondNum > firstNum) || (secondNum > thirdNum);
+var isThirdLonger = (thirdNum > firstNum) || (thirdNum > secondNum);
+
+if ((isFirstLonger && isSecondLonger) || (isSecondLonger && isThirdLonger) || (isFirstLonger && isThirdLonger))
+    Console.WriteLine("Galima sudaryti trikampi");
+else Console.WriteLine("Negalima sudaryti trikampio");
+
+Console.WriteLine();
+Console.WriteLine();
+
+//===============================================================//
+/// Uzduotis Nr.10
+
+Console.WriteLine("Pienas: 1 Eur, Sviestas: 2 Eur, Duona: 3 Eur");
+
+var milkPrice = 1;
+var butterPrice = 2;
+var breadPrice = 3;
+
+double prodA;
+double prodB;
+double sum;
+
+Console.Write("Pasirinkite pirmaji produkta: ");
+var firstPick = Console.ReadLine();
+
+if (firstPick.ToLower() == "pienas")
+    prodA = milkPrice;
+else if (firstPick.ToLower() == "sviestas")
+    prodA = butterPrice;
+else if (firstPick.ToLower() == "duona")
+    prodA = breadPrice;
+else
+{
+    prodA = 0;
+    Console.WriteLine("Blogai ivestas pasirinkimas");
+}
+
+Console.Write("Pasirinkite antra produkta: ");
+var secondPick = Console.ReadLine();
+
+if (secondPick.ToLower() == "pienas")
+    prodB = milkPrice;
+else if (secondPick.ToLower() == "sviestas")
+    prodB = butterPrice;
+else if (secondPick.ToLower() == "duona")
+    prodB = breadPrice;
+else
+{
+    prodB = 0;
+    Console.WriteLine("Blogai ivestas pasirinkimas");
+}
+
+if (prodA == prodB)
+    sum = (prodA + prodB) * 0.9;
+else
+    sum = prodA + prodB;
+
+Console.Write("Ar turite lojalumo kortele (T/N): ");
+var thirdPick = Console.ReadLine();
+if (thirdPick.ToUpper() == "T")
+    Console.WriteLine($"Galutine suma: {sum *= 0.9} Eur");
+else if (thirdPick.ToUpper() == "N")
+    Console.WriteLine($"Galutine suma: {sum}");
+else
+    Console.WriteLine("Netinkamas pasirinkimas");
+
+
+//===============================================================//
+/// Uzduotis Nr.11
+
+
