@@ -21,7 +21,7 @@ switch (day) {
         Console.WriteLine("Treciadienis");
         break;
     case 4:
-        Console.WriteLine("Ketvirtadienis");
+        Console.WriteLine("Ketvirtadienis");        
         break;
     case 5:
         Console.WriteLine("Penktadienis");
@@ -100,7 +100,9 @@ Console.WriteLine();
 
 Console.Write("Iveskite menesio skaiciu: ");
 
-var op3 = Int32.Parse(Console.ReadLine());
+var op3 = int.Parse(Console.ReadLine());
+
+var lol = 1 is 2 or 3;
 
 var result3 = op3 switch
 {
