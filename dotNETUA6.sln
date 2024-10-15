@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourthLecture_SwitchCase", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FifthLecture_StringManipulation", "FifthLecture_StringManipulation\FifthLecture_StringManipulation.csproj", "{475574B2-75F2-4024-9512-EEF3A5FEF10B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthLecture_For", "SixthLecture_For\SixthLecture_For.csproj", "{B89141DA-2008-4CDD-9584-778BF08C1CA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthLecture_Cycles", "SixthLecture_For\SixthLecture_Cycles.csproj", "{B89141DA-2008-4CDD-9584-778BF08C1CA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
