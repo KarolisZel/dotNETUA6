@@ -1,5 +1,4 @@
-﻿
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 Console.WriteLine("This is the Fifth lecture");
 Console.WriteLine();
 Console.WriteLine();
@@ -29,6 +28,7 @@ Console.WriteLine();
 
 Console.Write("Iveskite norima teksta: ");
 var input1 = Console.ReadLine();
+
 //Check for null/empty
 var symb1 = input1.ToCharArray();
 
@@ -45,6 +45,7 @@ Console.WriteLine();
 Console.Write("Iveskite bent 10 simboliu teksta: ");
 
 var input2 = Console.ReadLine();
+
 //Check for null/empty
 
 var symb2 = input2.ToCharArray();
@@ -66,6 +67,7 @@ Console.WriteLine();
 
 Console.Write("Iveskite \"5 simboliu ilgumo teksta\": ");
 var input3 = Console.ReadLine();
+
 //Check for null/empty
 
 var symb3 = input3.ToCharArray();
@@ -75,9 +77,9 @@ if (input3.Length < 5)
 else if (input3.Length > 5)
     Console.WriteLine("Ivestas tekstas per ilgas!");
 
-
 Console.Write("Kaip noretumete uzkoduoti pranesima? ");
 var codeInput = Console.ReadLine();
+
 //Check for null/empty
 
 string codedText = "";
@@ -129,7 +131,9 @@ if (!int.TryParse(input6, out var number))
 
 var years = yearsCount - number;
 Console.WriteLine($"Iki jums bus {yearsCount} metu liko: ");
-Console.Write($"{years} metu arba {years * 12} menesiu arba {(years * 365) / 7} savaiciu arba {years * 365} dienu");
+Console.Write(
+    $"{years} metu arba {years * 12} menesiu arba {(years * 365) / 7} savaiciu arba {years * 365} dienu"
+);
 
 Console.WriteLine();
 Console.WriteLine();
@@ -138,39 +142,41 @@ Console.WriteLine();
 /// Uzduotis Nr.3
 
 Console.Write("Iveskite zodi: ");
-var input6 = Console.ReadLine();
+var input7 = Console.ReadLine();
 
-var symb6 = input6.ToCharArray();
+var symb6 = input7.ToCharArray();
 
 if (symb6[0] == char.ToUpper(symb6[0]))
     Console.WriteLine($"Pakeistas zodis: {input6.ToUpper()}");
 else
-    Console.WriteLine($"Pakeistas zodis: {new string(char.ToUpper(symb6[0]) + input6.Substring(1))}");
+    Console.WriteLine(
+        $"Pakeistas zodis: {new string(char.ToUpper(symb6[0]) + input6.Substring(1))}"
+    );
 
 Console.WriteLine();
 Console.WriteLine();
-
-//----------------------------------------------------------------//
-
-Console.Write("Iveskite zodi: ");
-var input7 = Console.ReadLine();
-
-if (input7.Contains('a'))
-    Console.WriteLine($"Zodis: {input7}, Indeksas: {input7.IndexOf('a')}");
-else
-    Console.WriteLine("Simbolis 'a' nerastas");
 
 //----------------------------------------------------------------//
 
 Console.Write("Iveskite zodi: ");
 var input8 = Console.ReadLine();
 
+if (input8.Contains('a'))
+    Console.WriteLine($"Zodis: {input8}, Indeksas: {input8.IndexOf('a')}");
+else
+    Console.WriteLine("Simbolis 'a' nerastas");
+
+//----------------------------------------------------------------//
+
+Console.Write("Iveskite zodi: ");
+var input9 = Console.ReadLine();
+
 var compare = "labas";
 
-if (input8.Equals(compare))
-    Console.WriteLine($"Atbulai: {new string(input8.Reverse().ToArray())}");
+if (input9.Equals(compare))
+    Console.WriteLine($"Atbulai: {new string(input9.Reverse().ToArray())}");
 else
-    Console.WriteLine($"Nesutampa: {input8}");
+    Console.WriteLine($"Nesutampa: {input9}");
 
 Console.WriteLine();
 Console.WriteLine();
@@ -204,11 +210,18 @@ if (!int.TryParse(talkTime, out var minutes))
 }
 else
 {
-    var isZoneOne = (telInput.StartsWith("+372") || telInput.StartsWith("+371")
-        || telInput.StartsWith("+45") || telInput.StartsWith("+47")
-        || telInput.StartsWith("+358") || telInput.StartsWith("+46"));
+    var isZoneOne = (
+        telInput.StartsWith("+372")
+        || telInput.StartsWith("+371")
+        || telInput.StartsWith("+45")
+        || telInput.StartsWith("+47")
+        || telInput.StartsWith("+358")
+        || telInput.StartsWith("+46")
+    );
 
-    var isZoneTwo = (telInput.StartsWith("+44") || telInput.StartsWith("+355") || telInput.StartsWith("+373"));
+    var isZoneTwo = (
+        telInput.StartsWith("+44") || telInput.StartsWith("+355") || telInput.StartsWith("+373")
+    );
 
     var isZoneFour = telInput.StartsWith("+1");
 
@@ -233,11 +246,10 @@ else
     else if (isZoneFour)
     {
         Console.WriteLine($"Skambucio kaina per minute: {zoneFour}/1min");
-        Console.WriteLine($"Galutine skambucio kaina: {Math.Round(minutes * zoneFour,2)} eur.");
+        Console.WriteLine($"Galutine skambucio kaina: {Math.Round(minutes * zoneFour, 2)} eur.");
     }
-    else Console.WriteLine("Ivestas numeris neatitinka skaiciuokles!");
+    else
+        Console.WriteLine("Ivestas numeris neatitinka skaiciuokles!");
 }
 //===============================================================//
 /// Uzduotis Nr.6
-
-
