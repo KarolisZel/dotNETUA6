@@ -82,11 +82,28 @@ class Program
         //----------------------------------------------------------------//
         /// UŽDUOTIS NR.3
 
-        //----------------------------------------------------------------//
-        /// UŽDUOTIS NR.4
+        Console.WriteLine($"Įveskite skaičių: ");
+        var factorialNumber = ParseInt(Console.ReadLine());
+        if (factorialNumber == -1)
+            Console.WriteLine("Skaičius buvo įvestas per mažas arba neįvestas!");
+        else
+            Console.WriteLine(
+                $"Skaičiaus {factorialNumber} faktorialas: {CalculateFactorial(factorialNumber)}"
+            );
 
         //----------------------------------------------------------------//
-        /// UŽDUOTIS NR.5
+
+        Console.WriteLine($"Įveskite skaičių: ");
+        var fibonacciNumber = ParseInt(Console.ReadLine());
+        if (fibonacciNumber == -1)
+            Console.WriteLine("Skaičius buvo įvestas per mažas arba neįvestas!");
+        else
+        {
+            Console.WriteLine($"Skaičiaus {fibonacciNumber} fibonacci seka:");
+            Console.WriteLine(CalculateFibonacci(fibonacciNumber));
+        }
+
+        //----------------------------------------------------------------//
     }
 
     /// TEORIJA
@@ -185,13 +202,24 @@ class Program
     //===============================================================//
     /// Užduotis nr.3
 
+    private static int CalculateFactorial(int number)
+    {
+        if (number < 0)
+            return 0;
+        if (number == 0 || number == 1)
+            return 1;
+        return number * CalculateFactorial(number - 1);
+    }
 
+    private static int CalculateFibonacci(int number)
+    {
+        if (number < 0)
+            return -1;
+        if (number == 0)
+            return 0;
+        if (number == 1)
+            return 1;
 
-    //===============================================================//
-    /// Užduotis nr.4
-
-
-
-    //===============================================================//
-    /// Užduotis nr.5
+        return CalculateFibonacci(number - 1) + CalculateFibonacci(number - 2);
+    }
 }
