@@ -164,7 +164,7 @@ class Program
             return false;
         }
 
-        Console.WriteLine("Neivestas el. pašto adresas!");
+        Console.WriteLine("Neįvestas el. pašto adresas!");
         return false;
     }
 
@@ -206,7 +206,7 @@ class Program
     {
         if (number < 0)
             return 0;
-        if (number == 0 || number == 1)
+        if (number is 0 or 1)
             return 1;
         return number * CalculateFactorial(number - 1);
     }
