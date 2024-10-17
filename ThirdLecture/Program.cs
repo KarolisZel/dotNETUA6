@@ -1,4 +1,5 @@
 ﻿
+// ReSharper disable InvalidXmlDocComment
 Console.WriteLine("Hello, World!");
 Console.WriteLine("This is the third lecture");
 Console.WriteLine();
@@ -10,39 +11,26 @@ Console.WriteLine();
 //===============================================================//
 
 
-
 /// PRAKTIKA
 //===============================================================//
 /// Uzduotis Nr.1
 
-Console.WriteLine("Skaiciaus lyginimas su 100");
+Console.WriteLine("Number relevance to 100");
 
-Console.Write("Iveskite norima skaiciu: ");
+Console.Write("Enter a number: ");
 var inputNumber = Int32.Parse(Console.ReadLine());
 
-if (inputNumber > 100)
-    Console.WriteLine("Skaicius yra didesnis nei 100");
-else if (inputNumber == 100)
-    Console.WriteLine("Skaicius yra lygus 100");
-else
-    Console.WriteLine("Skaicius yra mazesnis nei 100");
+Console.WriteLine(Methods.NumberRelevantToHundred(inputNumber));
 
 Console.WriteLine();
 Console.WriteLine();
 
-Console.WriteLine("Savaites diena pagal skaiciu");
+Console.WriteLine("Weekday number to weekday name");
 
-Console.Write("Iveskite dienos skaiciu: ");
+Console.Write("Enter a weekday number: ");
 var dayNumber = Int32.Parse(Console.ReadLine());
 
-if (dayNumber == 1) Console.WriteLine("Pirmadienis");
-else if (dayNumber == 2) Console.WriteLine("Antradienis");
-else if (dayNumber == 3) Console.WriteLine("Treciadienis");
-else if (dayNumber == 4) Console.WriteLine("Ketvirtadienis");
-else if (dayNumber == 5) Console.WriteLine("Penktadienis");
-else if (dayNumber == 6) Console.WriteLine("Sestadienis");
-else if (dayNumber == 7) Console.WriteLine("Sekmadienis");
-else Console.WriteLine($"Neteisingas dienos skaicius: {dayNumber}");
+Console.WriteLine(Methods.DayNumberToDayName(dayNumber));
 
 Console.WriteLine();
 Console.WriteLine();
@@ -50,32 +38,20 @@ Console.WriteLine();
 //===============================================================//
 /// Uzduotis Nr.2
 
-Console.WriteLine("Skaicius lyginis arba dalijasi is 5");
-Console.Write("Iveskite norima skaiciu: ");
+Console.WriteLine("Number even or divides by 5");
+Console.Write("Enter a number: ");
 var divide = Int32.Parse(Console.ReadLine());
 
-if (divide % 2 == 0 && divide % 5 == 0)
-    Console.WriteLine("Skaicius lyginis ir dalijasi is 5");
-else if (divide % 2 == 0)
-    Console.WriteLine("Skaicius lyginis");
-else if (divide % 5 == 0)
-    Console.WriteLine("Skaicius dalijasi is 5");
-else
-    Console.WriteLine("Skaicius neatitinka salygu");
+Console.WriteLine(Methods.NumberEvenOrDividesByFive(divide));
 
 Console.WriteLine();
 Console.WriteLine();
 
-Console.WriteLine("Temperatura");
-Console.Write("Iveskite temperatura: ");
+Console.WriteLine("Temperature");
+Console.Write("Enter a temperature: ");
 var temps = Int32.Parse(Console.ReadLine());
 
-if (temps <= 0)
-    Console.WriteLine("Salta");
-else if (temps > 0 && temps <= 20)
-    Console.WriteLine("Vesu");
-else
-    Console.WriteLine("Karsta");
+Console.WriteLine(Methods.Temperature(temps));
 
 Console.WriteLine();
 Console.WriteLine();
@@ -83,31 +59,19 @@ Console.WriteLine();
 //===============================================================//
 /// Uzduotis Nr.3
 
-Console.Write("Kuria valanda pakilote ryte? ");
+Console.Write("When did you get up? ");
 var gotUp = Int32.Parse(Console.ReadLine());
 
-if (gotUp >= 0 && gotUp < 12)
-    Console.WriteLine("Geros dienos!");
-else if (gotUp >= 12 && gotUp < 18)
-    Console.WriteLine("Geros popietes!");
-else if (gotUp >= 18 && gotUp <= 24)
-    Console.WriteLine("Gero vakaro!");
-else
-    Console.WriteLine("Ivesta valanda neatitinka 24h formato");
+Console.WriteLine(Methods.WhenDidYouGetUp(gotUp));
 
 Console.WriteLine();
 Console.WriteLine();
 
-Console.Write("Iveskite slaptazodi: ");
+Console.Write("Enter your password: ");
 var pass = "Password";
 var passInput = Console.ReadLine();
 
-if (passInput == pass || passInput == "Mellon")
-    Console.WriteLine("Sekmingai prisijungete");
-else if (passInput == "01101001 01101110")
-    Console.WriteLine("Nulauzta...");
-else
-    Console.WriteLine("Slaptazodis neteisingas, prasome bandyti veliau");
+Console.WriteLine(Methods.Password(passInput));
 
 Console.WriteLine();
 Console.WriteLine();
@@ -115,30 +79,21 @@ Console.WriteLine();
 //===============================================================//
 /// Uzduotis Nr.4
 
-Console.Write("Iveskite savo amziu: ");
+Console.Write("Enter your age: ");
 var age = Int32.Parse(Console.ReadLine());
 
-if (age < 18)
-    Console.WriteLine("Jums priklauso nepilnamecio akcija");
-else if (age >= 18 && age < 65)
-    Console.WriteLine("Jus esate suauges");
-else if (age >= 65)
-    Console.WriteLine("Jums priklauso senjoro akcija");
-else
-    Console.WriteLine("Netinkamas amzius");
+Console.WriteLine(Methods.TestAge(age));
+
 Console.WriteLine();
 Console.WriteLine();
 
 //===============================================================//
 /// Uzduotis Nr.5
 
-Console.Write("Iveskite metus: ");
+Console.Write("Enter year: ");
 var leapYear = Int32.Parse(Console.ReadLine());
 
-if ((leapYear % 4 == 0 && leapYear % 100 != 0) || leapYear % 400 == 0)
-    Console.WriteLine("Tai yra keliamieji metai!");
-else 
-    Console.WriteLine("Tai nera keliamieji metai!");
+Console.WriteLine(Methods.LeapYear(leapYear));
 
 //===============================================================//
 /// Uzduotis Nr.6
@@ -146,14 +101,7 @@ else
 Console.Write("FizzBuzz: ");
 var fiz = Int32.Parse(Console.ReadLine());
 
-if (fiz % 3 == 0 && fiz % 5 == 0)
-    Console.WriteLine("BazingaPop");
-else if (fiz % 3 == 0)
-    Console.WriteLine("Bazinga");
-else if (fiz % 5 == 0)
-    Console.WriteLine("Pop");
-else 
-    Console.WriteLine(fiz);
+Console.WriteLine(Methods.FizzBuzz(fiz));
 
 Console.WriteLine();
 Console.WriteLine();
@@ -161,7 +109,7 @@ Console.WriteLine();
 //===============================================================//
 /// Uzduotis Nr.7
 
-Console.Write("Iveskite du skaicius: ");
+Console.Write("Enter two numbers: ");
 var num1 = Int32.Parse(Console.ReadLine());
 var num2 = Int32.Parse(Console.ReadLine());
 
@@ -311,3 +259,102 @@ else
 /// Uzduotis Nr.11
 
 
+//===============================================================//
+/// METHODS
+
+class Methods
+{
+    public static string NumberRelevantToHundred(int number)
+    {
+        if (number > 100)
+            return "More than 100";
+
+        if (number == 100)
+            return "Equal to 100";
+        
+        return "Less than 100";
+    }
+    
+    public static string DayNumberToDayName(int dayNumber)
+    {
+        if (dayNumber == 1) return "Monday";
+        if (dayNumber == 2) return "Tuesday";
+        if (dayNumber == 3) return "Wednesday";
+        if (dayNumber == 4) return "Thursday";
+        if (dayNumber == 5) return "Friday";
+        if (dayNumber == 6) return "Saturday";
+        if (dayNumber == 7) return "Sunday";
+        return $"Invalid day number: {dayNumber}";
+    }
+    
+    public static string NumberEvenOrDividesByFive(int divide)
+    {
+        if (divide % 2 == 0 && divide % 5 == 0)
+            return "Skaicius lyginis ir dalijasi is 5";
+        if (divide % 2 == 0)
+            return "Skaicius lyginis";
+        if (divide % 5 == 0)
+            return "Skaicius dalijasi is 5";
+        return "Skaicius neatitinka salygu";
+    }
+    
+    public static string Temperature(int temps)
+    {
+        if (temps <= 0)
+            return "Salta";
+        if (temps > 0 && temps <= 20)
+            return "Vesu";
+        return "Karsta";
+    }
+    
+    public static string WhenDidYouGetUp(int gotUp)
+    {
+        if (gotUp >= 0 && gotUp < 12)
+            return "Good morning!";
+        if (gotUp >= 12 && gotUp < 18)
+            return "Good afternoon!";
+        if (gotUp >= 18 && gotUp <= 24)
+            return "Good evening!";
+        return "Entered time is not in 24h format";
+    }
+
+    public static string Password(string pass)
+    {
+        if (pass is "Password" or "Mellon")
+            return "Logged in successfully!";
+        if (pass == "01101001 01101110")
+            return "Hacked...";
+        return "Incorrect password, please try again later...";
+    }
+
+    public static string TestAge(int age)
+    {
+        if (age < 18)
+            return "You have minor discount";
+        if (age >= 18 && age < 65)
+            return "You're an adult";
+        if (age >= 65)
+            return "You have senior discount";
+        return "Incorrect age";
+    }
+    
+    public static string LeapYear(int leapYear)
+    {
+        if ((leapYear % 4 == 0 && leapYear % 100 != 0) || leapYear % 400 == 0)
+            return "It's a leap year!";
+        return "It's not a leap year!";
+    }
+
+    public static string FizzBuzz(int fiz)
+    {
+        if (fiz % 3 == 0 && fiz % 5 == 0)
+            return "BazingaPop";
+        if (fiz % 3 == 0)
+            return "Bazinga";
+        if (fiz % 5 == 0)
+            return "Pop";
+        return fiz.ToString();
+    }
+    
+    
+}
