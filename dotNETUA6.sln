@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthLecture_Cycles", "Sixt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeventhLecture_Methods", "SeventhLecture_Methods\SeventhLecture_Methods.csproj", "{F8F43DF5-F7FA-4E6F-9345-1C5695BE58B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EighthLecture_UnitTest", "EighthLecture_UnitTest\EighthLecture_UnitTest.csproj", "{761AB0EA-2301-482A-A047-9994D47BB850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EighthLecture_Tests", "EighthLecture_Tests\EighthLecture_Tests.csproj", "{7C28D629-ED50-4830-BB96-3C9F1CA456CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{F8F43DF5-F7FA-4E6F-9345-1C5695BE58B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F43DF5-F7FA-4E6F-9345-1C5695BE58B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F43DF5-F7FA-4E6F-9345-1C5695BE58B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761AB0EA-2301-482A-A047-9994D47BB850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761AB0EA-2301-482A-A047-9994D47BB850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761AB0EA-2301-482A-A047-9994D47BB850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761AB0EA-2301-482A-A047-9994D47BB850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C28D629-ED50-4830-BB96-3C9F1CA456CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C28D629-ED50-4830-BB96-3C9F1CA456CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C28D629-ED50-4830-BB96-3C9F1CA456CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C28D629-ED50-4830-BB96-3C9F1CA456CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
