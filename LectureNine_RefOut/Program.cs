@@ -40,13 +40,13 @@ class Program
         //===============================================================//
         /// Uzduotis Nr.2
 
-        // GetUserData(out var name, out var surname);
-        // Console.WriteLine($"Hello, {name} {surname}!");
+        GetUserData(out var name, out var surname);
+        Console.WriteLine($"Hello, {name} {surname}!");
 
         //----------------------------------------------------------------//
 
-        // NumberMoreThanHundred( out var number);
-        // Console.WriteLine($"{number} is more than 100!");
+        NumberMoreThanHundred( out var number);
+        Console.WriteLine($"{number} is more than 100!");
 
         //----------------------------------------------------------------//
 
@@ -125,8 +125,8 @@ class Program
             return 0;
         }
 
-        quotient = Math.Round(x / y, 2);
-        remainder = Math.Round(x % y, 2);
+        quotient = (int)Math.Round(x / y, 2);
+        remainder = (int)Math.Round(x % y, 2);
 
         return quotient;
     }
