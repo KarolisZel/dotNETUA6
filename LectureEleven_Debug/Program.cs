@@ -1,4 +1,7 @@
 ﻿// ReSharper disable InvalidXmlDocComment
+
+using System.Text;
+
 namespace LectureEleven_Debug;
 
 class Program
@@ -12,21 +15,36 @@ class Program
         //===============================================================//
         /// PRAKTIKA
         //===============================================================//
+        /// DEBUG
         
-        PrintMax();
+        // PrintMax();
+        // Console.WriteLine();
+        //
+        // PrintFullName();
+        // Console.WriteLine();
+        //
+        // CountFromOneToTen();
+        // Console.WriteLine();
+        //
+        // CountFromOneToFive();
+        // Console.WriteLine();
+        //
+        // CompareNames();
+        // Console.WriteLine();
+        
+        //===============================================================//
+        /// STRINGBUILDER
+        
+        Console.Write("Enter a string: ");
+        var input = Console.ReadLine();
+        
+        Console.WriteLine($"Input: {input}");
+        Console.WriteLine($"Reversed string: {ReverseString(input)}");
+        Console.WriteLine();
+
+        Console.WriteLine($"Duplicates removed: {RemoveDuplicates(input)}");
         Console.WriteLine();
         
-        PrintFullName();
-        Console.WriteLine();
-        
-        CountFromOneToTen();
-        Console.WriteLine();
-        
-        CountFromOneToFive();
-        Console.WriteLine();
-        
-        CompareNames();
-        Console.WriteLine();
         
     }
 
@@ -82,5 +100,34 @@ class Program
             Console.WriteLine("Names are the same");
         else
             Console.WriteLine("Names are not the same");
+    }
+    
+    //----------------------------------------------------------------//
+    
+    private static string ReverseString(string str)
+    {
+        var reversedString = new StringBuilder();
+        
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            reversedString.Append(str[i]);
+        }
+        
+        return reversedString.ToString();
+    }
+
+    private static string RemoveDuplicates(string str)
+    {
+        var duplicates = new StringBuilder();
+        
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (duplicates.ToString().Contains(str[i].ToString()))
+                continue;
+            
+            duplicates.Append(str[i]);
+        }
+        
+        return duplicates.ToString();
     }
 }
