@@ -17,7 +17,7 @@ public class Tests
         int[] expected = new int[] { };
 
         // Act
-        int[] result = Program.SquareArray(input);
+        int[] result = Program.GetSquareArray(input);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -31,7 +31,7 @@ public class Tests
         int expected = -2;
 
         // Act
-        int result = Program.SumArray(input);
+        int result = Program.GetSumArray(input);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -45,7 +45,7 @@ public class Tests
         int expected = 3;
 
         // Act
-        int result = Program.MaxArray(input);
+        int result = Program.GetMaxArray(input);
 
         // Assert
         Assert.AreEqual(expected, result);

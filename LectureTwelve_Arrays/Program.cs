@@ -20,11 +20,11 @@ public class Program
         Console.WriteLine($"Original array: {string.Join(", ", array)}");
         Console.WriteLine();
         
-        Console.WriteLine($"Squared array: {string.Join(", ", SquareArray(array))}");
+        Console.WriteLine($"Squared array: {string.Join(", ", GetSquareArray(array))}");
         
-        Console.WriteLine($"Sum: {SumArray(array)}");
+        Console.WriteLine($"Sum: {GetSumArray(array)}");
         
-        Console.WriteLine($"Max: {MaxArray(array)}");
+        Console.WriteLine($"Max: {GetMaxArray(array)}");
         
         PrintIvertedArray(array);
         Console.WriteLine();
@@ -68,7 +68,7 @@ public class Program
         
     }
 
-    public static int[] SquareArray(int[] array)
+    public static int[] GetSquareArray(int[] array)
     {
         var squaredArray = new int[array.Length];
 
@@ -78,7 +78,7 @@ public class Program
         return squaredArray;
     }
 
-    public static int SumArray(int[] array)
+    public static int GetSumArray(int[] array)
     {
         var sum = 0;
 
@@ -88,7 +88,7 @@ public class Program
         return sum;
     }
 
-    public static int MaxArray(int[] array)
+    public static int GetMaxArray(int[] array)
     {
         var max = array[0];
 
