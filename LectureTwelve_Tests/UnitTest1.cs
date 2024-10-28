@@ -74,7 +74,7 @@ public class Tests
 
         // Act
         char result = Program.GetFirstLetter(input);
-
+        
         // Assert
         Assert.AreEqual(expected, result);
     }

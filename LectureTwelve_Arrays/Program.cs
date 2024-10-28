@@ -16,56 +16,55 @@ public class Program
         /// Užduotis Nr. 1
 
         var array = new int[] { 1, 2, 3, 4, 5 };
-        
+
         Console.WriteLine($"Original array: {string.Join(", ", array)}");
         Console.WriteLine();
-        
+
         Console.WriteLine($"Squared array: {string.Join(", ", GetSquareArray(array))}");
-        
+
         Console.WriteLine($"Sum: {GetSumArray(array)}");
-        
+
         Console.WriteLine($"Max: {GetMaxArray(array)}");
-        
+
         PrintIvertedArray(array);
         Console.WriteLine();
-        
+
         //===============================================================//
         /// Užduotis Nr. 2
-        
+
         var word = "Hello";
-        
+
         Console.WriteLine($"Original word: {word}");
-        
+
         Console.WriteLine($"Char array: {string.Join(", ", StringToCharArray(word))}");
         Console.WriteLine();
-        
+
         var sentence = " 47 Agent47 ";
         Console.WriteLine($"Original sentence: {sentence}");
-        
+
         Console.WriteLine($"First letter: {GetFirstLetter(sentence)}");
-        
+
         Console.WriteLine($"Last letter: {GetLastLetter(sentence)}");
 
         //===============================================================//
         /// Užduotis Nr. 3
-        
+
         var numberArray = new int[] { 9, 4, 2, 1, 3, 5, 6, 7, 8, 0 };
-        
+
         Console.WriteLine($"Original array: {string.Join(", ", numberArray)}");
-        
+
         var ascendingArray = SortArrayAscending(numberArray);
         Console.WriteLine($"Sorted array (ascending): {string.Join(", ", ascendingArray)}");
-        
+
         var descendingArray = SortArrayDecending(numberArray);
         Console.WriteLine($"Sorted array (descending): {string.Join(", ", descendingArray)}");
         Console.WriteLine();
-        
+
         var newArray = AddElementToArray(numberArray, 10);
         Console.WriteLine($"New array with added element: {string.Join(", ", newArray)}");
 
         var newArray2 = RemoveElementFromArray(numberArray, 5);
         Console.WriteLine($"New array without element: {string.Join(", ", newArray2)}");
-        
     }
 
     public static int[] GetSquareArray(int[] array)
@@ -203,7 +202,7 @@ public class Program
                     index = j;
                 }
             }
-            
+
             // Swap values if necessary
             if (index != i)
             {
