@@ -12,7 +12,7 @@ class Program
         Console.WriteLine();
         //===============================================================//
         /// Užduotis Nr.1
-        /*
+        
         int[] input = { 1, -2, 3, -4, 5 };
         Console.WriteLine($"Input array: {string.Join(" , ", input)}");
 
@@ -49,7 +49,6 @@ class Program
 
         Console.WriteLine($"Deck of cards: {string.Join(" , ", Methods.GetCardDeck(deckTypes, deckCards))}");
         Console.WriteLine();
-        */
 
         //===============================================================//
         /// Užduotis Nr.2
@@ -90,7 +89,7 @@ class Program
 /// PRAKTIKA
 public class Methods
 {
-    /*
+    
     //===============================================================//
     /// ForEach
     public static int GetAverage(int[] input)
@@ -180,8 +179,6 @@ public class Methods
         index = 0;
         return deck;
     }
-
-    */
 
     //===============================================================//
     /// Matrix
@@ -304,13 +301,11 @@ public class Methods
         }
     }
     
-    /*
     public static void FindRepeatingNames(string[,] matrix)
     {
         int rows = matrix.GetLength(0);
         int cols = matrix.GetLength(1);
         
-        // Array to keep track of printed repeating names
         bool[] printed = new bool[rows * cols];
         
         for (int i = 0; i < rows; i++)
@@ -319,10 +314,8 @@ public class Methods
             {
                 string current = matrix[i, j];
                 
-                // Check if this name has already been printed as repeating
                 if (NamePrinted(current, matrix, printed)) continue;
 
-                // Check for duplicates of the current element
                 bool isDuplicate = false;
                 for (int x = 0; x < rows; x++)
                 {
@@ -337,11 +330,10 @@ public class Methods
                     if (isDuplicate) break;
                 }
 
-                // Print the name if it is found to be a duplicate
                 if (isDuplicate)
                 {
                     Console.WriteLine(current);
-                    MarkAsPrinted(current, matrix, printed); // Mark the name as printed
+                    MarkAsPrinted(current, matrix, printed);
                 }
             }
         }
@@ -379,7 +371,7 @@ public class Methods
             }
         }
     }
-    */
+    
     
     
 }
